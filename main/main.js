@@ -1,5 +1,5 @@
-module.exports = function printInventory(inputs) {
-    console.log("Debug Info");
+const getInventoryItems = require('./pos')
 
-    return 'Hello World!';
+module.exports = function printInventory(inputs) {
+    return getInventoryItems(inputs);
 };
